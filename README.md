@@ -4,7 +4,7 @@ A simple fan control tray icon I created to switch between auto mode and full-sp
   <img src="https://github.com/NickL77/FanControlTrayIcon/blob/master/FanControlTrayIcon.png">
 </p>
 
-## Starting on Startup (tested on Ubuntu 18.04)
+## Autostart on Startup (tested on Ubuntu 18.04)
 Note: This is not an ideal configuration. Writing a file into the sudoer file is not a safe approach, but I went with this as it was the fastest way to get the script to start at start-up.
 
 1. In the package, run `chmod 755 fanControl.sh` (this is very important so non-sudoers can not exploit this configuration to run commands as sudo with a password)
