@@ -1,7 +1,7 @@
 # Fan Control Tray Icon
 A simple fan control tray icon I created to switch between auto mode and full-speed on my Thinkpad Extreme.
 <p align="center">
-  <img src="https://github.com/NickL77/FanControlTrayIcon/blob/master/FanControlTrayIcon.png">
+  <img src="https://github.com/NickL77/FanControlTrayIcon/blob/master/img/fanControlTrayIcon.png">
 </p>
 
 ## Autostart on Startup (tested on Ubuntu 18.04)
