@@ -12,7 +12,7 @@ from gi.repository import AppIndicator3 as appindicator
 def main():
 
     CURRPATH = os.path.dirname(os.path.realpath(__file__))
-    icon_path = CURRPATH + "/fan_icon.png"
+    icon_path = CURRPATH + "/img/fanIcon.png"
 
     indicator = appindicator.Indicator.new("customtray",
             icon_path, 
