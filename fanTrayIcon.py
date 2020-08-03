@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import gi
 import os
 
@@ -41,10 +43,14 @@ def quit(_):
     gtk.main_quit()
 
 def fan_auto(_):
-    os.system("echo level auto | sudo tee /proc/acpi/ibm/fan")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    cmd = "sudo " + dir_path + "/fanControl.sh auto"
+    os.system(cmd)
 
 def fan_fullspeed(_):
-    os.system("echo level full-speed | sudo tee /proc/acpi/ibm/fan")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    cmd = "sudo " + dir_path + "/fanControl.sh full"
+    os.system(cmd)
 
 if __name__ == "__main__":
     main()
